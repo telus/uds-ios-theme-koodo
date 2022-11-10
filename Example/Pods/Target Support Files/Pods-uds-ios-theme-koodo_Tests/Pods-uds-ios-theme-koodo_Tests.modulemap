@@ -1,0 +1,6 @@
+framework module Pods_uds_ios_theme_koodo_Tests {
+  umbrella header "Pods-uds-ios-theme-koodo_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

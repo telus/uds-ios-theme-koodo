@@ -1,0 +1,6 @@
+framework module uds_ios_theme_koodo {
+  umbrella header "uds-ios-theme-koodo-umbrella.h"
+
+  export *
+  module * { export * }
+}
