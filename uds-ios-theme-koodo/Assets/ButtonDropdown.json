@@ -19,6 +19,14 @@
       "description": "Applies while an interactive component is the currently selected one in a set of states or components, for example a button in a `ButtonGroup`.",
       "values": [true],
       "type": "state"
+    },
+    "size": {
+      "type": "variant",
+      "values": ["default", "small"]
+    },
+    "width": {
+      "type": "variant",
+      "values": ["full"]
     }
   },
   "rules": [
@@ -58,6 +66,12 @@
           "green": 0.4,
           "blue": 0.4,
           "alpha": 1
+        },
+        "leadIconColor": {
+          "red": 0.4,
+          "green": 0.4,
+          "blue": 0.4,
+          "alpha": 1
         }
       }
     },
@@ -89,6 +103,12 @@
           "green": 1,
           "blue": 1,
           "alpha": 1
+        },
+        "leadIconColor": {
+          "red": 1,
+          "green": 1,
+          "blue": 1,
+          "alpha": 1
         }
       }
     },
@@ -115,12 +135,27 @@
           "blue": 1,
           "alpha": 1
         },
+        "leadIconColor": {
+          "red": 1,
+          "green": 1,
+          "blue": 1,
+          "alpha": 1
+        },
         "outerBorderColor": {
           "red": 0,
           "green": 0,
           "blue": 0,
           "alpha": 0
         }
+      }
+    },
+    {
+      "if": {
+        "size": "small"
+      },
+      "tokens": {
+        "paddingBottom": 4,
+        "paddingTop": 4
       }
     }
   ],
@@ -146,6 +181,10 @@
       "blue": 0,
       "alpha": 1
     },
+    "descriptionFontName": "StagSans",
+    "descriptionFontSize": 14,
+    "descriptionFontWeight": 400,
+    "descriptionTextPaddingBottom": 0,
     "dividerColor": {
       "red": 0.78824,
       "green": 0.78431,
@@ -170,12 +209,32 @@
       "blue": 0,
       "alpha": 1
     },
-    "iconPadding": 4,
+    "iconPadding": 0,
     "iconPosition": "right",
     "iconSize": 20,
-    "iconSpace": 0,
+    "iconSpace": 1,
     "iconTranslateX": 0,
     "iconTranslateY": 0,
+    "leadIcon": null,
+    "leadIconBackgroundColor": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 0
+    },
+    "leadIconBorderRadius": 0,
+    "leadIconColor": {
+      "red": 0,
+      "green": 0,
+      "blue": 0,
+      "alpha": 1
+    },
+    "leadIconContainerPaddingBottom": 0,
+    "leadIconContainerPaddingLeft": 0,
+    "leadIconContainerPaddingRight": 0,
+    "leadIconContainerPaddingTop": 0,
+    "leadIconPadding": 0,
+    "leadIconSize": 24,
     "lineHeight": 1.5,
     "minWidth": 0,
     "opacity": 1,
@@ -193,10 +252,10 @@
     },
     "outerBorderGap": 2,
     "outerBorderWidth": 1,
-    "paddingBottom": 8,
-    "paddingLeft": 24,
+    "paddingBottom": 12,
+    "paddingLeft": 16,
     "paddingRight": 16,
-    "paddingTop": 8,
+    "paddingTop": 12,
     "shadow": null,
     "subtitleColor": {
       "red": 0,
@@ -205,6 +264,8 @@
       "alpha": 1
     },
     "textAlign": "center",
+    "textPaddingLeft": 8,
+    "textPaddingRight": 8,
     "width": null
   }
 }

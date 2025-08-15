@@ -479,7 +479,7 @@
     },
     "icon": null,
     "iconSize": 16,
-    "iconSpace": 0,
+    "iconSpace": 1,
     "iconTranslateX": 0,
     "iconTranslateY": 0,
     "outerBorderColor": {

@@ -1690,6 +1690,14 @@
           "description": "Applies while an interactive component is the currently selected one in a set of states or components, for example a button in a `ButtonGroup`.",
           "values": [true],
           "type": "state"
+        },
+        "size": {
+          "type": "variant",
+          "values": ["default", "small"]
+        },
+        "width": {
+          "type": "variant",
+          "values": ["full"]
         }
       },
       "rules": [
@@ -1729,6 +1737,12 @@
               "green": 0.4,
               "blue": 0.4,
               "alpha": 1
+            },
+            "leadIconColor": {
+              "red": 0.4,
+              "green": 0.4,
+              "blue": 0.4,
+              "alpha": 1
             }
           }
         },
@@ -1760,6 +1774,12 @@
               "green": 1,
               "blue": 1,
               "alpha": 1
+            },
+            "leadIconColor": {
+              "red": 1,
+              "green": 1,
+              "blue": 1,
+              "alpha": 1
             }
           }
         },
@@ -1786,12 +1806,27 @@
               "blue": 1,
               "alpha": 1
             },
+            "leadIconColor": {
+              "red": 1,
+              "green": 1,
+              "blue": 1,
+              "alpha": 1
+            },
             "outerBorderColor": {
               "red": 0,
               "green": 0,
               "blue": 0,
               "alpha": 0
             }
+          }
+        },
+        {
+          "if": {
+            "size": "small"
+          },
+          "tokens": {
+            "paddingBottom": 4,
+            "paddingTop": 4
           }
         }
       ],
@@ -1817,6 +1852,10 @@
           "blue": 0,
           "alpha": 1
         },
+        "descriptionFontName": "StagSans",
+        "descriptionFontSize": 14,
+        "descriptionFontWeight": 400,
+        "descriptionTextPaddingBottom": 0,
         "dividerColor": {
           "red": 0.78824,
           "green": 0.78431,
@@ -1841,12 +1880,32 @@
           "blue": 0,
           "alpha": 1
         },
-        "iconPadding": 4,
+        "iconPadding": 0,
         "iconPosition": "right",
         "iconSize": 20,
-        "iconSpace": 0,
+        "iconSpace": 1,
         "iconTranslateX": 0,
         "iconTranslateY": 0,
+        "leadIcon": null,
+        "leadIconBackgroundColor": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "alpha": 0
+        },
+        "leadIconBorderRadius": 0,
+        "leadIconColor": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "alpha": 1
+        },
+        "leadIconContainerPaddingBottom": 0,
+        "leadIconContainerPaddingLeft": 0,
+        "leadIconContainerPaddingRight": 0,
+        "leadIconContainerPaddingTop": 0,
+        "leadIconPadding": 0,
+        "leadIconSize": 24,
         "lineHeight": 1.5,
         "minWidth": 0,
         "opacity": 1,
@@ -1864,10 +1923,10 @@
         },
         "outerBorderGap": 2,
         "outerBorderWidth": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 24,
+        "paddingBottom": 12,
+        "paddingLeft": 16,
         "paddingRight": 16,
-        "paddingTop": 8,
+        "paddingTop": 12,
         "shadow": null,
         "subtitleColor": {
           "red": 0,
@@ -1876,6 +1935,8 @@
           "alpha": 1
         },
         "textAlign": "center",
+        "textPaddingLeft": 8,
+        "textPaddingRight": 8,
         "width": null
       }
     },
@@ -5198,6 +5259,7 @@
           },
           "tokens": {
             "fontSize": 20,
+            "iconSize": 24,
             "lineHeight": 1.4
           }
         },
@@ -6606,6 +6668,12 @@
             "raised": true
           },
           "tokens": {
+            "backgroundColor": {
+              "red": 1,
+              "green": 1,
+              "blue": 1,
+              "alpha": 1
+            },
             "borderColor": {
               "red": 0,
               "green": 0,
@@ -6653,9 +6721,15 @@
           },
           "tokens": {
             "backgroundColor": {
-              "red": 0,
-              "green": 0,
-              "blue": 0,
+              "red": 0.25098,
+              "green": 0.25098,
+              "blue": 0.25098,
+              "alpha": 1
+            },
+            "borderColor": {
+              "red": 0.25098,
+              "green": 0.25098,
+              "blue": 0.25098,
               "alpha": 1
             },
             "iconColor": {
@@ -7271,7 +7345,7 @@
         },
         "icon": null,
         "iconSize": 16,
-        "iconSpace": 0,
+        "iconSpace": 1,
         "iconTranslateX": 0,
         "iconTranslateY": 0,
         "outerBorderColor": {
@@ -7478,7 +7552,7 @@
             "isChild": true
           },
           "tokens": {
-            "itemBorderBottomWidth": 0,
+            "itemBorderBottomWidth": 1,
             "itemBorderLeftColor": {
               "red": 0,
               "green": 0,
@@ -7486,7 +7560,7 @@
               "alpha": 1
             },
             "itemBorderLeftWidth": 4,
-            "itemBorderTopWidth": 0
+            "itemBorderTopWidth": 1
           }
         },
         {
@@ -7495,14 +7569,14 @@
             "pressed": true
           },
           "tokens": {
-            "itemBorderBottomWidth": 0,
+            "itemBorderBottomWidth": 1,
             "itemBorderLeftColor": {
               "red": 0.34902,
               "green": 0.34902,
               "blue": 0.34902,
               "alpha": 1
             },
-            "itemBorderTopWidth": 0,
+            "itemBorderTopWidth": 1,
             "itemColor": {
               "red": 0.34902,
               "green": 0.34902,
@@ -10227,7 +10301,7 @@
           "blue": 0.98824,
           "alpha": 1
         },
-        "checkedSize": 16,
+        "checkedSize": 12,
         "containerBackgroundColor": {
           "red": 0,
           "green": 0,
@@ -10278,7 +10352,7 @@
           "blue": 0,
           "alpha": 1
         },
-        "inputOutlineWidth": 2,
+        "inputOutlineWidth": 1,
         "inputSize": 20,
         "labelColor": {
           "red": 0,
@@ -10297,7 +10371,7 @@
           "blue": 0,
           "alpha": 0
         },
-        "outerBorderGap": 5,
+        "outerBorderGap": 1,
         "outerBorderWidth": 1
       }
     },
@@ -15356,7 +15430,7 @@
     }
   },
   "metadata": {
-    "themeTokensVersion": "4.11.0",
+    "themeTokensVersion": "4.12.0",
     "name": "theme-koodo"
   }
 }

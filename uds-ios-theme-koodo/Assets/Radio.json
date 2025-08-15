@@ -135,7 +135,7 @@
       "blue": 0.98824,
       "alpha": 1
     },
-    "checkedSize": 16,
+    "checkedSize": 12,
     "containerBackgroundColor": {
       "red": 0,
       "green": 0,
@@ -186,7 +186,7 @@
       "blue": 0,
       "alpha": 1
     },
-    "inputOutlineWidth": 2,
+    "inputOutlineWidth": 1,
     "inputSize": 20,
     "labelColor": {
       "red": 0,
@@ -205,7 +205,7 @@
       "blue": 0,
       "alpha": 0
     },
-    "outerBorderGap": 5,
+    "outerBorderGap": 1,
     "outerBorderWidth": 1
   }
 }

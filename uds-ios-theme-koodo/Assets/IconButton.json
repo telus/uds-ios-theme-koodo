@@ -330,6 +330,12 @@
         "raised": true
       },
       "tokens": {
+        "backgroundColor": {
+          "red": 1,
+          "green": 1,
+          "blue": 1,
+          "alpha": 1
+        },
         "borderColor": {
           "red": 0,
           "green": 0,
@@ -377,9 +383,15 @@
       },
       "tokens": {
         "backgroundColor": {
-          "red": 0,
-          "green": 0,
-          "blue": 0,
+          "red": 0.25098,
+          "green": 0.25098,
+          "blue": 0.25098,
+          "alpha": 1
+        },
+        "borderColor": {
+          "red": 0.25098,
+          "green": 0.25098,
+          "blue": 0.25098,
           "alpha": 1
         },
         "iconColor": {

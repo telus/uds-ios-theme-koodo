@@ -92,6 +92,7 @@
       },
       "tokens": {
         "fontSize": 20,
+        "iconSize": 24,
         "lineHeight": 1.4
       }
     },
